@@ -63,11 +63,14 @@
         <!-- product search part0 -->
         <div class="text-center mb-9 flex justify-center">
           <input
+            id="searchText"
             type="text"
             placeholder="Type here"
-            class="input input-bordered input-primary w-full max-w-xs mr-1"
+            class="border w-full max-w-xs mr-1 outline-none rounded-lg px-3"
           />
-          <button class="btn btn-primary">Search</button>
+          <button onclick="searchHandler()" class="btn btn-primary">
+            Search
+          </button>
         </div>
 
         <!-- loading spinner div -->
@@ -80,11 +83,16 @@
           id="cardContainer"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-5"
         ></div>
+
+        <!-- show all card part -->
+        <!-- <div id="showAllBtnDiv" class="flex justify-center mt-20 mb-6">
+          <button class="btn btn-primary">Show All</button>
+        </div> -->
       </section>
     </main>
 
     <!-- footer part -->
-    <section class="flex justify-center bg-base-200">
+    <footer class="flex justify-center bg-base-200">
       <div class="container mx-auto footer p-10 text-base-content">
         <div>
           <span class="footer-title">Services</span>
@@ -127,7 +135,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <script src="./scripts/script.js"></script>
   </body>
